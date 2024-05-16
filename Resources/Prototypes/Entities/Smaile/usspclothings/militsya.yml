@@ -1,0 +1,36 @@
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatTrenchMilitsya
+  name: Милицейская Шинель
+  description: По коням, у нас возможно криминал!
+  components:
+  - type: Sprite
+    sprite: GayAnus/USSP/Militsiacoat.rsi
+  - type: Clothing
+    sprite: GayAnus/USSP/Militsiacoat.rsi
+  - type: TemperatureProtection
+    coefficient: 0.1
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.95
+  - type: Food
+    requiresSpecialDigestion: true
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 20
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitMilitsia
+  name: Милицейский комбинезон
+  description: Комбинезон, сделанный из прочных материалов, которые способствуют борьбе против народа.
+  components:
+  - type: Sprite
+    sprite: GayAnus/USSP/Militsiaskirt.rsi
+  - type: Clothing
+    sprite: GayAnus/USSP/Militsiaskirt.rsi
