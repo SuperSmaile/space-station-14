@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatPilotka
+  name: Милицейская пилотка
+  description: Милицейская пилотка.
+  components:
+  - type: Sprite
+    sprite: GayAnus/USSP/Militsiapilotka.rsi
+  - type: Clothing
+    sprite: GayAnus/USSP/Militsiapilotka.rsi

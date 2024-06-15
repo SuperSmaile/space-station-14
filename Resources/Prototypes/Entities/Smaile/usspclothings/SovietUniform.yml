@@ -1,0 +1,59 @@
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatTrenchMilitsya
+  name: Милицейская Шинель
+  description: Тёмно-синяя милицейская шинель. Андрюх у нас труп, возможно криминал, по коням!
+  components:
+  - type: Sprite
+    sprite: GayAnus/USSP/Militsiacoat.rsi
+  - type: Clothing
+    sprite: GayAnus/USSP/Militsiacoat.rsi
+  - type: TemperatureProtection
+    coefficient: 0.1
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.95
+        Piercing: 0.3
+  - type: Food
+    requiresSpecialDigestion: true
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 20
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitMilitsia
+  name: Милицейская форма
+  description: Тёмно-серые брюки и светло-васильковая рубашка, сделанны из народных материалов. Отлично подойдут для блюстителей порядка на станции.
+  components:
+  - type: Sprite
+    sprite: GayAnus/USSP/Militsiasuit.rsi
+  - type: Clothing
+    sprite: GayAnus/USSP/Militsiasuit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirttMilitsia
+  name: Милицейская юбка
+  description: Тёмно-серая юбка и светло-васильковая рубашка, сделанны из народных материалов. Отлично подойдут для блюстителей порядка на станции.
+  components:
+  - type: Sprite
+    sprite: GayAnus/USSP/Militsiaskirt.rsi
+  - type: Clothing
+    sprite: GayAnus/USSP/Militsiaskirt.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitSoldat
+  name: Военная униформа
+  description: Классическая униформа рядового солдата СССП. Дизайн придуманный сотни лет назад всё ещё служит народной армии.
+  components:
+  - type: Sprite
+    sprite: GayAnus/USSP/Soldatjumpsuit.rsi
+  - type: Clothing
+    sprite: GayAnus/USSP/Soldatjumpsuit.rsi
