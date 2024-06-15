@@ -14,7 +14,7 @@
     modifiers:
       coefficients:
         Slash: 0.95
-        Piercing: 0.3
+        Piercing: 0.30
   - type: Food
     requiresSpecialDigestion: true
   - type: SolutionContainerManager
@@ -57,3 +57,24 @@
     sprite: GayAnus/USSP/Soldatjumpsuit.rsi
   - type: Clothing
     sprite: GayAnus/USSP/Soldatjumpsuit.rsi
+
+- type: entity
+  parent: ClothingOuterBaseMediumUSSP
+  id: ClothingOuterArmorBasicUSSP
+  name: Бронежилет "Корунд"
+  description: Стандартный бронежилет Милиции СССП. Сделан из дешевых материалов, из за чего имеет сомнительную бронезащиту, однако это не помешало ему получить огромное распространение среди служащих внутренних войск. ГОСТ Р 19841337-880.
+  components:
+  - type: Sprite
+    sprite: GayAnus/USSP/Militsiaarmor.rsi
+  - type: Clothing
+    sprite: GayAnus/USSP/Militsiaarmor.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.40
+        Slash: 0.40
+        Piercing: 0.50
+        Heat: 0.70
+  - type: ExplosionResistance
+    damageCoefficient: 0.60
+  - type: AllowSuitStorage
